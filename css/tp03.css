@@ -1,0 +1,39 @@
+body {
+  background-color: #EFECCA;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  color: #C03000;
+}
+
+h2 {
+  color: #4BB5C1;
+}
+
+h3 {
+  color: #C03000;
+}
+
+a:link, a:visited {
+  color: #0000FF;
+}
+
+.menu li {
+  list-style: none;
+  text-align: center;
+  color: white;
+  border: solid 1px #660000;
+  background-color: #C03000;
+  width: 15%;
+  padding: 0px 10px;
+  display: inline;
+}
+
+.menu li:hover {
+  background-color: #009900;
+}
+
+p {
+  max-width: 60ch;
+}
