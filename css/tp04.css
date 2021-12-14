@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 50vw;
+}
+
+header {
+  background-color: rgb(177, 224, 231);
+  padding: 3% 10%;
+  flex-basis: 100%;
+}
+
+nav {
+  background-color: rgb(252, 178, 189);
+  padding: 5%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: rgb(149, 246, 149);
+  padding: 0% 10% 10%;
+  flex-grow: 4;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  height: 75%;
+  justify-content: space-around;
+}
+
+section {
+  background-color: rgb(183, 155, 183);
+  flex-basis: 10%;
+  padding: 10%;
+  height: 75%;
+}
+
+footer {
+  background-color: rgb(254, 236, 169);
+  padding: 3% 10%;
+  flex-basis: 100%;
+}
