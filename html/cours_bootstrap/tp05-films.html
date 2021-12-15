@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>TP5 Bootstrap - Les Films</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Le Ciné</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./tp05-accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./tp05-films.html">Les Films</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tp05-cinema.html">Le Cinéma</a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .container-fluid -->
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>À l'affiche <small>du 13 au 19 décembre 2021</small></h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <!-- Carte 1 -->
+          <div class="card" style="width: 18rem;">
+            <img src="https://images.indianexpress.com/2021/11/spider-man-no-way-home-1200-4.jpg" class="card-img-top"
+              alt="Spider-man">
+            <div class="card-body">
+              <h5 class="card-title">Spider-man : No Way Home</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, doloremque accusantium
+                veritatis aliquam recusandae velit eligendi. Voluptate ipsam magni quas exercitationem qui nostrum
+                temporibus rem accusamus, fugit perferendis maxime nihil? Lorem ipsum dolor sit amet.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card1Modal">
+                Voir les séances
+              </button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+        </div><!-- .col-12 -->
+
+
+        <!-- Modal carte 1 -->
+        <div class="modal fade" id="card1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Spider-man : No Way Home</h5>
+                <button type="button" class="btn-Fermer" data-bs-dismiss="modal" aria-label="Fermer">x</button>
+              </div>
+              <div class="modal-body">
+                <div class="container align-items-center">
+                  <button type="button" class="btn btn-light">lundi 13 déc 13h00</button>
+                  <button type="button" class="btn btn-light">lundi 13 déc 14h30</button>
+                  <button type="button" class="btn btn-light">lundi 13 déc 16h00</button>
+                  <button type="button" class="btn btn-light">lundi 13 déc 19h00</button>
+                  <button type="button" class="btn btn-light">lundi 13 déc 21h50</button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Envoyer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="col-12 col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.cinemaspathegaumont.com/media/movie/id/13107/backdrop/40961/md/1/clifford.jpg"
+              class="card-img-top" alt="Clifford">
+            <div class="card-body">
+              <h5 class="card-title">Clifford</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas dolor accusantium
+                quae
+                ipsa voluptatum impedit incidunt voluptatibus neque architecto vero quis pariatur doloremque illo,
+                quidem
+                facilis. Adipisci, error cum? Lorem ipsum dolor sit amet consectetur.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card2Modal">
+                Voir les séances
+              </button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+        </div><!-- .col-12 -->
+
+        <!-- Modal carte 2 -->
+        <div class="modal fade" id="card2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Clifford</h5>
+                <button type="button" class="btn-Fermer" data-bs-dismiss="modal" aria-label="Fermer">x</button>
+              </div>
+              <div class="modal-body">
+                <button type="button" class="btn btn-light">lundi 13 déc 10h00</button>
+                <button type="button" class="btn btn-light">lundi 13 déc 11h30</button>
+                <button type="button" class="btn btn-light">lundi 13 déc 12h45</button>
+                <button type="button" class="btn btn-light">lundi 13 déc 14h00</button>
+                <button type="button" class="btn btn-light">lundi 13 déc 15h50</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Envoyer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="col-12 col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.cinemaspathegaumont.com/media/movie/id/14199/backdrop/40954/md/1/encanto.jpg"
+              class="card-img-top" alt="Encanto">
+            <div class="card-body">
+              <h5 class="card-title">Encanto, la fantastique famille Madrigal</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nihil totam ipsam
+                debitis veniam eum voluptates repudiandae impedit neque praesentium odio placeat iste, blanditiis dolor
+                explicabo aliquid quaerat facere dolorem.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card3Modal">
+                Voir les séances
+              </button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+        </div><!-- .col-12 -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+
+    <!-- Modal carte 3 -->
+    <div class="modal fade" id="card3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Encanto, la fantastique famille Madrigal</h5>
+            <button type="button" class="btn-Fermer" data-bs-dismiss="modal" aria-label="Fermer">x</button>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn btn-light">lundi 13 déc 10h00</button>
+            <button type="button" class="btn btn-light">lundi 13 déc 11h30</button>
+            <button type="button" class="btn btn-light">lundi 13 déc 12h45</button>
+            <button type="button" class="btn btn-light">lundi 13 déc 14h00</button>
+            <button type="button" class="btn btn-light">lundi 13 déc 15h50</button>
+            <button type="button" class="btn btn-light">lundi 13 déc 16h30</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary">Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="bg-light mt-5">
+
+    <div class="container">
+      <div class="row">
+        <!-- Réseaux sociaux -->
+        <div id="footer-social" class="col-6 col-md d-flex flex-column align-items-center">
+          <h3 class="h5">Réseaux sociaux</h3>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><img width="20px"
+                src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-256.png"
+                alt="facebook"></li>
+            <li class="list-inline-item"><img width="20px"
+                src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-256.png" alt="">
+            </li>
+            <li class="list-inline-item"><img width="20px"
+                src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-256.png"
+                alt="">
+            </li>
+            <li class="list-inline-item"><img width="20px"
+                src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-256.png" alt="">
+            </li>
+          </ul>
+        </div><!-- #footer-social -->
+
+        <!-- Adresse -->
+        <div id="footer-address" class="col-12 col-md d-flex flex-column align-items-center">
+          <h3 class="h5">Adresse</h3>
+          <p>1 place de la Comédie</p>
+          <p>34000 Montpellier</p>
+        </div><!-- #footer-address -->
+
+        <!-- Liens -->
+        <div id="footer-links" class=" col-6 col-md d-flex justify-content-center">
+          <ul class="list-unstyled">
+            <li>Contact</li>
+            <li>Mentions légales</li>
+            <li>Plan du site</li>
+          </ul>
+        </div><!-- #footer-links -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+
+  </footer>
+
+</body>
+
+</html>
