@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping list example</title>
+  <!-- https://developer.mozilla.org/fr/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#apprentissage_actif_une_liste_de_courses_dynamique -->
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 8px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My shopping list</h1>
+
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button>Add item</button>
+  </div>
+
+  <ul>
+
+  </ul>
+
+  <script>
+    let list = document.querySelector('ul');
+    let input = document.querySelector('#item');
+    let addItemButton = document.querySelector('button');
+
+    addItemButton.onclick = function() {
+      // Récupérer les données
+      let inputText = input.value;
+      input.value = '';
+      
+      // Création d'élément de la liste
+      let li = document.createElement('li')
+      let span = document.createElement('span')
+      let deleteButton = document.createElement('button')
+      
+      li.appendChild(span);
+      li.appendChild(deleteButton);
+      
+      span.textContent = inputText;
+      deleteButton.textContent = 'Supprimer';
+      deleteButton.setAttribute('class', 'delete');
+      
+      list.appendChild(li);
+
+      input.focus();
+
+      // Suppression d'élement
+      deleteButton.onclick = function() {
+        this.parentElement.remove();
+      }
+    }
+  </script>
+</body>
+
+</html>
