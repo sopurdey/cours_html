@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP JS - Calculatrice</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- JS -->
+  <script defer src="./calc.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+<header>
+  <h1>Calculatrice</h1>
+</header>
+<main>
+  <div class="container mt-5 w-50 outer">
+    <div class="row" id="display-row">
+    </div>
+    <div class="row pt-3" id="top-row">
+      <div class="col-6">
+        <button class="btn bg-danger" id="clear-all-btn">AC</button>
+      </div>
+      <div class="col-3">
+        <button class="btn" id="delete-btn">C</button>
+      </div>
+      <div class="col-3">
+        <button class="btn operator" id="divide-btn">/</button>
+      </div>
+    </div>
+    <div class="row" id="second-row">
+      <div class="col-3">
+        <button class="btn number" id="btn1">1</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn2">2</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn3">3</button>
+      </div>
+      <div class="col-3">
+        <button class="btn operator" id="times-btn">x</button>
+      </div>
+    </div>
+    <div class="row" id="third-row">
+      <div class="col-3">
+        <button class="btn number" id="btn4">4</button>
+
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn5">5</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn6">6</button>
+      </div>
+      <div class="col-3">
+        <button class="btn operator" id="subtract-btn">-</button>
+      </div>
+    </div>
+    <div class="row" id="bottom-row">
+      <div class="col-3">
+        <button class="btn number" id="btn7">7</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn8">8</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn9">9</button>
+      </div>
+      <div class="col-3">
+        <button class="btn operator" id="add-btn">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button class="btn number" id="decimal-btn">.</button>
+      </div>
+      <div class="col-3">
+        <button class="btn number" id="btn0">0</button>
+      </div>
+      <div class="col-6">
+        <button class="btn bg-secondary" id="equals-btn">=</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
+<footer></footer>
+
+<body>
+
+</body>
+
+</html>
