@@ -23,44 +23,39 @@
     <h1>oMDb API</h1>
   </header>
   <main>
-    <form class="form" action="">
-      <div class="container">
-        <div class="form-group">
-          <label for="title">Titre : </label>
-          <input id="title" name="title" type="text">
 
-          <label for="year">Année : </label>
-          <input id="year" name="year" type="text">
-        </div>
-
-        <div class="form-group">
-          <input id="submit" name="submit" type="submit" value="Rechercher">
-          <input id="reset" name="reset" type="reset" value="Effacer">
-        </div>
-      </div>
+    <form class="form-inline">
+      <label for="title">Titre : </label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="title" placeholder="Saisir le titre d'un film">
+      <button type="submit" id="submit" class="btn btn-outline-light search">Rechercher</button>
+      <button type="reset" id="reset" class="btn btn-outline-danger">Effacer</button>
+      <div class="error hidden">Merci de saisir le titre d'un film</div>
     </form>
 
-    <div class="container card-container hidden mt-5">
-      <div class="card" style="max-width: 540px;">
+    <!-- Liste de films après recherche -->
+    <div class="container list-container hidden m-5 ">
+      <ul class="film-list list-group"></ul>
+    </div>
+
+    <div class="container card-container hidden mt-5 mb-5">
+      <button type="submit" id="back-btn" class="btn btn-outline-light mb-3 search">Retour</button>
+      <div class="card">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 card-image">
             <img src="" class="img-fluid rounded-start" alt="">
           </div><!-- .container -->
           <div class="card-body col-md-8">
             <h5 class="card-title"></h5>
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush film-info">
               <li class="list-group-item film-year"></li>
               <li class="list-group-item film-release"></li>
+              <li class="list-group-item film-genre"></li>
               <li class="list-group-item film-plot"></li>
             </ul>
           </div><!-- .card-body -->
         </div><!-- .row -->
       </div><!-- .card -->
     </div><!-- .container -->
-
-    <div class="container list-container hidden m-5 ">
-      <ul class="film-list list-group"></ul>
-    </div>
 
   </main>
   <footer></footer>

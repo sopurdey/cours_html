@@ -1,11 +1,51 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
-
 .hidden {
   display: none;
+}
+
+h1,
+label {
+  color: white;
+}
+
+h1 {
+  margin: auto 20px;
+}
+
+form {
+  margin: auto 20px;
+}
+
+.error {
+  background-color: white;
+  color: red;
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.card-container {
+  text-align: end;
+}
+
+.card .row {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+.card-body {
+  text-align: left;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
 }
 
 .card-title {
@@ -13,19 +53,8 @@ body {
   font-size: 2rem;
 }
 
-form .container {
-  display: flex;
-  justify-content: center;
-}
-
-.error {
-  background-color: rgb(227, 152, 152);
-  text-align: center;
-  margin-top: 25px;
-  padding: 20px;
-  font-weight: 600;
-  max-width: 60%;
-  border-radius: 5px;
+.film-info li {
+  max-width: 60ch;
 }
 
 .film-list {
